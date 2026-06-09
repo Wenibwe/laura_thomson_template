@@ -30,10 +30,10 @@ h1 {
 }
 nav ul {
   margin-top: 15px;
-  gap: 10px;
+  gap: 15px;
   list-style: none;
   font-family: quicksand;
-  font-size: 13px;
+  font-size: 12px;
   display: flex;
 }
 
@@ -78,4 +78,24 @@ section {
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+.transparent h2{
+  margin: 0px;
+  font-family: domine;
+  font-size: 36px;
+  text-align: center;
+  padding-top: 20%;
+  color: #ffffff;
+}
+.transparent p{
+  font-family: roboto;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+.transparent i{
+font-size: 50px;
+margin-left: 50%;
+color: #ffffff;
 }
