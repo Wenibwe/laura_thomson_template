@@ -138,8 +138,6 @@ p {
   font-size: 16px;
   color: #444444;
 }
-.about-section {
-}
 .about-container {
   padding: 20px;
   display: flex;
@@ -192,6 +190,9 @@ p {
     padding: 10px;
   }
 }
+.resume-section {
+  min-height: 50%;
+}
 .resume-container {
   display: flex;
   justify-content: space-around;
@@ -233,4 +234,105 @@ h5 {
   position: absolute;
   border-radius: 50%;
   left: -25px;
+}
+.service-container {
+  padding: 20px;
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.service-item {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  height: 160px;
+  padding: 20px;
+  position: 32px;
+  width: 100;
+}
+.service-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.service-item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: #ffbb27;
+  transition: height 0.9s ease;
+  z-index: -1;
+}
+
+.service-item:hover::before {
+  height: 100%;
+}
+
+.service-item:hover i {
+  transition: height 0.9s ease;
+  color: #060707;
+}
+
+.service-item .icon {
+  color: #ffbb27;
+  font-size: 40px;
+  padding: 20px;
+}
+.testimonial {
+  position: absolute;
+  width: 100%;
+  min-height: 550px;
+  background: url(https://bootstrapmade.com/content/demo/Laura/assets/img/testimonials-bg.jpg)
+    center/cover;
+}
+.testimonial-transparent {
+  position: absolute;
+  background-color: color-mix(in srgb, #060707, transparent 30%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  img {
+    border-radius: 50%;
+    height: 120px;
+    margin-left: 47%;
+    margin-top: 120px;
+    border: 8px solid #444444;
+  }
+  h3 {
+    color: #ffffff;
+    text-align: center;
+    padding: 0;
+  }
+  h4 {
+    color: color-mix(in srgb, #ffffff, transparent 40%);
+    text-align: center;
+  }
+  .stars {
+    text-align: center;
+    color: #ffbb27;
+  }
+  .testimonial-para{
+    text-align: center;
+  }
+  span{
+    text-align: center;
+    color: #ffffff;
+    font-family: roboto;
+    font-size: 16px;
+  }
+}
+.portfolio-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.portfolio-item{
+ 
+}
+.portfolio-item img{
+  height: 400px;
 }
