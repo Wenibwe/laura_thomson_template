@@ -316,23 +316,39 @@ h5 {
     text-align: center;
     color: #ffbb27;
   }
-  .testimonial-para{
+  .testimonial-para {
     text-align: center;
   }
-  span{
+  span {
     text-align: center;
     color: #ffffff;
     font-family: roboto;
     font-size: 16px;
   }
-}
-.portfolio-container{
+.portfolio-item {
+  margin: 0px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
-.portfolio-item{
- 
+.portfolio-image {
+  position: relative;
 }
-.portfolio-item img{
-  height: 400px;
+.portfolio-image:hover {
+  cursor: pointer;  
+  .transparents {
+    display: block;
+  }
+}
+.portfolio-image img {
+    margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+}
+.transparents {
+  background-color: color-mix(in srgb, #272829, transparent 60%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: none;
 }
